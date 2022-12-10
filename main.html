@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MANISH GYM</title>
+    <style>
+        body {
+
+            background: url(gy3.jpg);
+        }
+
+        header {
+            color: aliceblue;
+        }
+
+        .navigation {}
+
+        #first {
+            display: inline-block;
+            position: absolute;
+           
+            left: 30px;
+            top: 10px;
+            font-size: 15px;
+            text-align: center;
+            
+        }
+        #first img{
+            width: 50px;
+        }
+
+        #second {
+            display: block;
+            width: 500px;
+            margin: auto;
+            margin-top: 10px;
+            
+
+        }
+
+        #third {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            
+            display: inline-block;
+            
+
+        }
+
+        .navbar li {
+            display: inline-block;
+            
+        }
+        
+        .navbar li a{
+            margin-left: 25px;
+            font-size: 20px;
+          
+
+            text-decoration: none;
+            color: white;
+        }
+        .navbar li a:hover{
+            text-decoration: underline;
+            color:gray;
+        }
+        .navbar li a:active{
+            text-decoration: underline;
+            color:gray;
+        }
+        .btn{
+            background-color: black;
+            color: white;
+            font-size: 15px;
+            padding-left: 10px;
+            padding-right: 10px;
+            border: 2px solid rgba(87, 6, 251, 0.516);
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .btn:hover{
+            background-color: grey;
+        }
+        #j{
+            color: aqua;
+            font-size: 200px;
+            margin-left: 900px;
+            margin-top: 100px;
+
+        }
+        #i{
+            color: aliceblue;
+            font-size: 30px;
+            margin-left: 950px;
+            margin-top: 10px;
+        }
+        form{
+            color: aliceblue;
+            margin-left: 900px;
+           
+        }
+        #k{
+            color: rgb(48, 22, 247);
+            margin-left: 900px;
+            margin-top:50px;
+        }
+        
+        #l{
+            color: rgb(4, 60, 60);
+        }
+        </style>
+</head>
+
+<body>
+    <header>
+        <div class="navigation" id="first">
+            <img src="logo2.jpg" alt="">
+            <div>
+               MANISH GYM
+            </div>
+        </div>
+        <div class="navigation" id="second">
+            <div class="navbar">
+
+                <ul>
+                    <li><a href="#">home</a></li>
+                    <li><a href="#">services</a></li>
+                    <li><a href="#">registration</a></li>
+                    <li><a href="#">contact us</a></li>
+
+                </ul>
+            </div>
+            <div class="navigation" id="third">
+                
+                <button class="btn">chat with us</button>
+                <button class="btn">email us</button>
+            </div>
+
+    </header>
+    <div id="j">
+        25%
+        
+
+    </div>
+    <div id="i">
+        instant discount
+    </div>
+    
+
+
+
+
+
+    <h2 id="k">REGISTRATION FORM:</h2>
+    <form action="backend.php">
+        <!-- action is the place where our forms input data store -->
+        <div>
+            NAME: <input type="text" name="my name">
+            <!-- name is used to save in backend  -->
+        </div>
+        <br>
+        <div>
+            MOBILE NO: <input type="text" name="my role">
+        </div>
+        <br>
+        <label for="email">EMAIL</label>
+        <div>
+            <input type="email" name="my email" id="email">
+            <!-- for selecting on name use lable -->
+        </div>
+        <br>
+        <div>
+            DATE OF BIRTH: <input type="date" name="my date">
+        </div>
+        <br>
+        
+        <div>
+            GENDER: male <input type="radio" name="my gender "> female <input type="radio" name="my gender "> other
+            <input type="radio" name="my gender ">
+        </div>
+        <br>
+        <!-- <div>
+            WRITE ABOUT YOURSELF: <br> <textarea name="my text" cols="90" rows="10"></textarea>
+        </div> -->
+        <br>
+        <div>
+            <label for="c">SCELECT MEMBERSHIP </label>
+            <select name="menbership" id="c">
+                <option value="1month">1month</option>
+                <option value="3months">3months</option>
+                <option value="6months">6months</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <input type="submit" value="submit now">
+            <input type="reset" value="reset now">
+        </div>
+        <br>
+
+    </form>
+    <p id="l">NOTE:This is a non functional frontend website for GYM,only build as a project using HTML and CSS</p>
+
+</body>
+
+</html>
